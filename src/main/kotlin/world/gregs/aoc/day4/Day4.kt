@@ -31,7 +31,7 @@ object Day4 : Challenge {
     }
 
     private val expected = setOf("byr", "iyr", "eyr", "hgt", "hcl", "ecl", "pid", "cid")
-    private val hexRegex = "#[a-zA-Z0-9]{6}".toRegex()
+    private val hexRegex = "#[a-fA-F0-9]{6}".toRegex()
     private val eyeColours = setOf("amb", "blu", "brn", "gry", "grn", "hzl", "oth")
 
     fun part1(passports: List<Map<String, String>>): Int {
